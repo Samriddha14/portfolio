@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samriddha Sharma Maraseni — Electrical &amp; Electronics Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Samriddha Maraseni, Electrical &amp; Electronics Engineering graduate interested in embedded systems, electronics, PCB design, IoT, software development, and practical engineering solutions."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts (remove these two lines to go fully offline / system fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Set the saved theme before the page paints (avoids a flash of the wrong theme) -->
+    <script>
+      var saved = localStorage.getItem('theme')
+      document.documentElement.dataset.theme = saved === 'light' ? 'light' : 'dark'
+    </script>
+
+    <!-- If JavaScript is off, show content anyway -->
+    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+  </head>
+
+  <body>
+    <!-- ================================================================
+         EDITING GUIDE
+         - Text lives in this file. Change it, save, done.
+         - Colors / layout / fonts live in style.css
+         - The toggle, menu, and animations live in script.js
+         - To run: just double-click index.html, or use "npm run dev" from
+           the project folder. No build step.
+         ================================================================ -->
+
+    <!-- Icons used below (all in one place so you can swap or add icons) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .3C5.4.3 0 5.7 0 12.3c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.6 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4C24 5.7 18.6.3 12 .3z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3-1.8 0-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.2 2.4 4.2 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.5H3.6V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10M7 17 17 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.3 11.3 1.4 1.4M2 12h2m16 0h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18m12 0L6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="9" y="9" width="6" height="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 2v2m0 16v2M15 2v2m0 16v2M2 9h2m0 6H2m18-6h2m0 6h-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-circuit" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3M7 21v-4a2 2 0 0 1 2-2h4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4m-12 8-4-4 4-4m8.5-4-5 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4m-7.9 9a10 10 0 1 1 15.8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 20h.01M2 8.8a15 15 0 0 1 20 0M5 12.9a10 10 0 0 1 14 0M8.5 16.4a5 5 0 0 1 7 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2m6 6V2m3 6v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-workflow" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" fill="currentColor"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M21 4h-7m-4 0H3m18 8h-9m-4 0H3m18 8h-11m-4 0H3M14 4v4m-4 4v4m-4 4v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-bug" viewBox="0 0 24 24"><path d="m8 2 1.9 1.9m4.2-1.9L16 3.9M9 7.1V6a3 3 0 0 1 6 0v1.1M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6Zm0-9v9M6.5 9C4.6 8.8 3 7.1 3 5m3 8H2m1 8c0-2.1 1.7-3.9 3.8-4M21 5c0 2.1-1.6 3.8-3.5 4m3.5 4h-4m-.3 4c2.1.1 3.8 1.9 3.8 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    </svg>
+
+    <!-- ================================================================ -->
+    <!-- NAVBAR -->
+    <!-- ================================================================ -->
+    <header class="nav" id="nav">
+      <nav class="container nav-inner" aria-label="Main navigation">
+        <a href="#home" class="brand">
+          <span class="brand-name">Er. Samriddha Sharma Maraseni</span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Switch to light mode">
+            <svg class="icon icon-sun"><use href="#i-sun" /></svg>
+            <svg class="icon icon-moon"><use href="#i-moon" /></svg>
+          </button>
+          <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+            <svg class="icon"><use href="#i-menu" /></svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile links (hidden until the burger is tapped) -->
+      <div class="nav-mobile" id="nav-mobile">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- ================================================================ -->
+    <!-- HERO -->
+    <!-- ================================================================ -->
+    <section class="hero" id="home">
+      <!-- decorative circuit background (edit the SVG paths to change it) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="kicker kicker-hero">Electrical &amp; Electronics Engineer</p>
+        <h1>Er. Samriddha<br>Sharma Maraseni</h1>
+        <p class="hero-tagline">
+          Driven by Curiosity, Powered by Engineering.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            View My Projects
+            <svg class="icon"><use href="#i-arrow-right" /></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/Samriddha14" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg class="icon"><use href="#i-github" /></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/er-samriddha-sharma-maraseni-9716b9306" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg class="icon"><use href="#i-linkedin" /></svg>
+          </a>
+          <!-- TODO: replace with your real email -->
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=samriddhamaraseni@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+            title="Email"
+          >
+          <svg class="icon"><use href="#i-mail" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+        <span>Scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <main>
+      <!-- ================================================================ -->
+      <!-- ABOUT -->
+      <!-- ================================================================ -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker"><span></span>About</p>
+            <h2>Turning ideas into working hardware and software.</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="reveal">
+                Electrical and Electronics Engineering graduate and Nepal Engineering Council 
+(NEC) Registered Engineer with strong theoretical knowledge and hands-on project 
+experience, including Arduino-based systems and smart switchboard maintenance.
+<br> <br>
+Highly motivated, quick learner, and detail-oriented, seeking a role to apply technical 
+skills, troubleshoot electrical systems, and contribute to reliable and efficient 
+operations in a professional environment.
+              </p>
+            </div>
+
+            <!-- profile card -->
+            <aside class="card profile-card reveal">
+              <div class="profile-head">
+                <div class="monogram">SSM</div>
+                <div>
+                  <h3>Samriddha Sharma Maraseni</h3>
+                  <p class="profile-title">Electrical &amp; Electronics Engineer</p>
+                </div>
+              </div>
+
+              <dl class="profile-rows">
+                <div>
+                  <dt>Education</dt>
+                  <dd>Bachelor of Electrical &amp; Electronics Engineering</dd>
+                  <dd class="sub">Pokhara University</dd>
+                </div>
+                <div>
+                  <dt>Registration</dt>
+                  <dd>Registered Electrical &amp; Electronics Engineer(NEC)</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- SKILLS -->
+      <!-- ================================================================ -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker"><span></span> Skills</p>
+            <h2>A practical toolkit across hardware and software.</h2>
+          </header>
+
+          <div class="skills-grid">
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon"><svg class="icon"><use href="#i-cpu" /></svg></span>
+                <h3>Electronics &amp; Embedded</h3>
+              </div>
+              <div class="tags">
+                <span class="tag">Arduino</span><span class="tag">ATmega328P</span><span class="tag">Embedded Systems</span>
+                <span class="tag">Sensors</span><span class="tag">Microcontrollers</span>
+              </div>
+            </div>
+
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon"><svg class="icon"><use href="#i-circuit" /></svg></span>
+                <h3>PCB &amp; Hardware</h3>
+              </div>
+              <div class="tags">
+                <span class="tag">KiCad</span><span class="tag">Proteus</span><span class="tag">PCB Design</span><span class="tag">PCB Troubleshooting</span>
+                <span class="tag">Electronics Debugging</span><span class="tag">Soldering</span>
+                <span class="tag">Hardware Prototyping</span>
+              </div>
+            </div>
+
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon"><svg class="icon"><use href="#i-code" /></svg></span>
+                <h3>Software &amp; Development</h3>
+              </div>
+              <div class="tags">
+                <span class="tag">C/C++</span>
+                <span class="tag">JavaScript</span><span class="tag">Electron</span>
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon"><svg class="icon"><use href="#i-gauge" /></svg></span>
+                <h3>Engineering</h3>
+              </div>
+              <div class="tags">
+                <span class="tag">Electrical Measurements</span><span class="tag">Control Systems</span>
+                <span class="tag">Power Electronics</span><span class="tag">SCADA</span><span class="tag">PLC</span>
+                <span class="tag">Electrical Protection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- FEATURED PROJECT -->
+      <!-- ================================================================ -->
+      <section class="section" id="featured">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Featured Project</p>
+            <h2>Final Year Engineering project</h2>
+          </header>
+
+          <article class="card featured reveal">
+            <div class="featured-visual">
+              <img
+                src="final_year_project.png"
+                alt="Underground Cable Fault Distance Locator — final year project"
+                class="featured-photo"
+              />
+            </div>
+
+            <div class="featured-body">
+              <span class="badge">
+                <span class="dot"></span>Final Year Engineering Project
+              </span>
+              <h3>Underground Cable Fault Distance Locator Using Arduino Uno</h3>
+              <p class="featured-desc">
+                An Arduino Uno-based system designed to estimate the distance of faults in underground electrical
+                cables using electrical resistance measurement and Ohm&rsquo;s law.
+              </p>
+
+              <div class="featured-block">
+                <p class="mini-label">Key features</p>
+                <ul class="feature-list">
+                  <li><svg class="icon"><use href="#i-check" /></svg>Fault distance estimated from measured resistance via Ohm&rsquo;s law</li>
+                  <li><svg class="icon"><use href="#i-check" /></svg>ADC-based acquisition of the sensing voltage</li>
+                  <li><svg class="icon"><use href="#i-check" /></svg>Circuit verified through Proteus simulation</li>
+                  <li><svg class="icon"><use href="#i-check" /></svg>Custom PCB designed and hardware prototype built</li>
+                  <li><svg class="icon"><use href="#i-check" /></svg>Low-cost, portable fault-location setup</li>
+                </ul>
+              </div>
+
+              <div class="tags">
+                <span class="tag">Arduino Uno</span><span class="tag">Ohm&rsquo;s Law</span>
+                <span class="tag">Resistance Measurement</span><span class="tag">ADC</span>
+                <span class="tag">Proteus Simulation</span><span class="tag">PCB Design</span>
+                <span class="tag">Hardware Implementation</span>
+              </div>
+
+              <div class="featured-actions">
+                <!-- TODO: add your repository link to the href below once published -->
+                <a href="#" class="btn btn-primary disabled" onclick="return false">
+                  <svg class="icon"><use href="#i-github" /></svg>GitHub — coming soon
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  Details
+                  <svg class="icon"><use href="#i-arrow-up-right" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- OTHER PROJECTS -->
+      <!-- ================================================================ -->
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Projects</p>
+            <h2>More things I&rsquo;ve built and worked on.</h2>
+          </header>
+
+          <div class="projects-grid">
+             <!-- project 1 -->
+            <article class="card project-card reveal">
+              <div class="project-visual" aria-hidden="true">
+                <img
+                src="night_light.png"
+                alt="automatic night light"
+                class="featured-photo"
+              
+              />
+              </div>
+              <div class="project-body">
+                <h3>Automatic Night Light System</h3>
+                <p>
+                  An Electron-based desktop application for practicing and taking Nepal Engineering Council
+                  preparation MCQs, with practice mode, exam mode, question palettes, subject selection, and faculty
+                  selection.
+                </p>
+                <div class="tags">
+                  <span class="tag">Electron</span><span class="tag">JavaScript</span><span class="tag">JSON</span>
+                </div>
+                
+              </div>
+            </article>
+            <!-- project 2 -->
+            <article class="card project-card reveal">
+              <div class="project-visual" aria-hidden="true">
+                 <img
+                src="NEC_MCQ.png"
+                alt="NEC MCQ Portal"
+                class="featured-photo"
+              
+              />
+              </div>
+              <div class="project-body">
+                <h3>NEC MCQ Portal</h3>
+                <p>
+                  An Electron-based desktop application and capacitor based android application for practicing and taking Nepal Engineering Council
+                  preparation MCQs, with practice mode, exam mode, question palettes, subject selection, and faculty
+                  selection.
+                </p>
+                <div class="tags">
+                  <span class="tag">Electron & Capacitor</span><span class="tag">JavaScript</span><span class="tag">JSON</span>
+                </div>
+              
+              </div>
+            </article>
+
+            <!-- project 3 -->
+            <article class="card project-card reveal">
+              <div class="project-visual" aria-hidden="true">
+                <img
+                src="kharcha_app_icon.png"
+                alt="Expense_tracker"
+                class="featured-photo"
+              />
+              </div>
+              <div class="project-body">
+                <h3>Income &amp; Expense Tracker(kharcha)</h3>
+                <p>
+                  A Flutter-based personal finance application designed to track income and expenses with a focus on
+                  simple, practical financial management.
+                </p>
+                <div class="tags">
+                  <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Android</span>
+                </div>
+                <p class="note">Source available on request</p>
+              </div>
+            </article>
+
+            <!-- project 4 -->
+            <article class="card project-card reveal">
+              <div class="project-visual" aria-hidden="true">
+                <img
+                src="flutter.png"
+                alt="Doc_Vault"
+                class="featured-photo"
+              />
+              </div>
+              <div class="project-body">
+                <h3>DocVault</h3>
+                <p>
+                  A flutter based android application with security features to store your personal documents in a organised manner with online backup within your own google drive. Focusing on user accessibility and file management.
+                </p>
+                <div class="tags">
+                  <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Arduino</span>
+                  <span class="tag">Android</span><span class="tag">Google Drive</span>
+                </div>
+                <p class="note">Testing phase</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- JOURNEY / TIMELINE -->
+      <!-- ================================================================ -->
+      <section class="section" id="journey">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Educational Journey</p>
+            <h2>The path so far.</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="tl-dot"></span>
+              <p class="kicker">Secondary Education Examination(SEE)</p>
+              <h3>Accounts & Optional Maths</h3>
+              <p class="tl-place">Shanti Vidhya Mandir Secondary School</p>
+            </li>
+            <li class="reveal">
+              <span class="tl-dot"></span>
+              <p class="kicker">High School</p>
+              <h3>Bio Science Major</h3>
+              <p class="tl-place">Oxford Secondary School</p>
+            </li>
+            <li class="reveal">
+              <span class="tl-dot"></span>
+              <p class="kicker">Bachelor</p>
+              <h3>Bachelor of Electrical &amp; Electronics Engineering</h3>
+              <p class="tl-place">Pokhara University(Oxford College of Engineering &amp; Management)</p>
+            </li>
+            <li class="reveal">
+              <span class="tl-dot"></span>
+              <p class="kicker">Registration</p>
+              <h3>Nepal Engineering Council</h3>
+              <p class="tl-place">Registered Electrical &amp; Electronics Engineer</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- INTERESTS -->
+      <!-- ================================================================ -->
+      <section class="section" id="interests">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Interests</p>
+            <h2>Areas I&rsquo;m actively exploring.</h2>
+          </header>
+
+          <div class="interests-grid">
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-cpu" /></svg><span>Embedded Systems</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-wifi" /></svg><span>IoT</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-circuit" /></svg><span>PCB Design</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-plug" /></svg><span>Electronics</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-workflow" /></svg><span>Automation</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-bolt" /></svg><span>Electrical Engineering</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-code" /></svg><span>Software Development</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-sliders" /></svg><span>Control Systems</span></div>
+            <div class="card interest-card reveal"><svg class="icon"><use href="#i-bug" /></svg><span>Hardware Debugging</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- ACHIEVEMENTS -->
+      <!-- ================================================================ -->
+      <section class="section" id="achievements">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Achievements</p>
+            <h2>Milestones and results.</h2>
+          </header>
+
+          <div class="achievements-grid">
+            <div class="card achievement-card reveal">
+              <p class="achievement-value">3.91</p>
+              <h3>CGPA</h3>
+              <p>Bachelor of Electrical &amp; Electronics Engineering, Pokhara University</p>
+            </div>
+            <div class="card achievement-card reveal">
+              <p class="achievement-value">B.E.</p>
+              <h3>Electrical &amp; Electronics Engineering</h3>
+              <p>Engineering degree with a focus on practical electronics and systems</p>
+            </div>
+            <div class="card achievement-card reveal">
+              <p class="achievement-value">NEC</p>
+              <h3>Registered Engineer</h3>
+              <p>Nepal Engineering Council registered electrical &amp; electronics engineer</p>
+            </div>
+            <div class="card achievement-card reveal">
+              <p class="achievement-value">1</p>
+              <h3>Final Year Engineering Project</h3>
+              <p>Underground Cable Fault Distance Locator using Arduino Uno</p>
+            </div>
+            <div class="card achievement-card reveal">
+              <p class="achievement-value">5+</p>
+              <h3>Technical Projects</h3>
+              <p>Embedded systems, electronics, PCB design, and software development</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- CONTACT -->
+      <!-- ================================================================ -->
+      <section class="section" id="contact">
+        <div class="container">
+          <header class="section-head">
+            <p class="kicker">Contact</p>
+            <h2>Let&rsquo;s Build Something.</h2>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <p class="contact-text">
+                I&rsquo;m interested in engineering opportunities, technical projects, and collaborations involving
+                electronics, embedded systems, software, and automation.
+              </p>
+
+              <!-- TODO: replace the links below with your real email / LinkedIn -->
+              <a class= 'contact-link' href="https://mail.google.com/mail/?view=cm&fs=1&to=samriddhamaraseni@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+                <span class="contact-link-icon"><svg class="icon"><use href="#i-mail" /></svg></span>
+                <span><span class="mini-label">Email</span>samriddhamaraseni@gmail.com</span>
+              </a>
+              <a class="contact-link" href="https://github.com/Samriddha14" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon"><svg class="icon"><use href="#i-github" /></svg></span>
+                <span><span class="mini-label">GitHub</span>github.com/Samriddha14</span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/in/er-samriddha-sharma-maraseni-9716b9306" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon"><svg class="icon"><use href="#i-linkedin" /></svg></span>
+                <span><span class="mini-label">LinkedIn</span>linkedin.com/in/er-samriddha-sharma-maraseni-9716b9306</span>
+              </a>
+            </div>
+
+            <!-- Contact form. Front-end only: wire it to an email service or
+                 backend API in script.js (search for "form") to actually
+                 deliver messages, then delete the note below. -->
+            <form class="card contact-form reveal" id="contact-form">
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+                </div>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+
+              <p class="form-note" id="form-note" role="status" hidden>
+                Message ready to send. This form is not connected to a backend yet — wire it to an email service or API
+                in script.js to deliver messages.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================ -->
+    <!-- FOOTER -->
+    <!-- ================================================================ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-name">Samriddha Maraseni</p>
+          <p class="footer-title">Electrical &amp; Electronics Engineer</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="socials">
+          <a href="https://github.com/Samriddha14" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg class="icon"><use href="#i-github" /></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/er-samriddha-sharma-maraseni-9716b9306" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg class="icon"><use href="#i-linkedin" /></svg>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=samriddhamaraseni@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+            title="Email"
+          >
+          <svg class="icon"><use href="#i-mail" /></svg>
+          </a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Samriddha Maraseni. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
