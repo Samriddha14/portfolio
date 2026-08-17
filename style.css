@@ -876,6 +876,39 @@ html[data-theme='light'] .icon-moon { display: block; }
 }
 
 /* ----------------------------------------------------------------------------
+   13. EXPERIENCE
+   ---------------------------------------------------------------------------- */
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.experience-card {
+  padding: 24px;
+}
+
+.experience-card h3 {
+  font-size: 15px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.experience-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.experience-card p + p {
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .experience-list { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------------------------------------------
    13. CONTACT
    ---------------------------------------------------------------------------- */
 .contact-grid {
