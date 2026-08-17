@@ -99,6 +99,20 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 
 /* ----------------------------------------------------------------------------
+   6. EMAIL LINKS — open Gmail app on mobile, Gmail compose in browser
+   ---------------------------------------------------------------------------- */
+document.querySelectorAll('a[data-email]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault()
+    const to = a.dataset.email
+    const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+    window.location.href = mobile
+      ? `mailto:${to}`
+      : `https://mail.google.com/mail/?view=cm&fs=1&to=${to}`
+  })
+})
+
+/* ----------------------------------------------------------------------------
    6. CONTACT FORM — Web3Forms
    ---------------------------------------------------------------------------- */
 const form = document.getElementById('contact-form')
