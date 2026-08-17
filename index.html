@@ -569,7 +569,10 @@ operations in a professional environment.
             <!-- Contact form. Front-end only: wire it to an email service or
                  backend API in script.js (search for "form") to actually
                  deliver messages, then delete the note below. -->
-            <form class="card contact-form reveal" id="contact-form">
+            <form class="card contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="5cb27d96-0dcb-49e6-800a-8aee151087be" />
+              <input type="hidden" name="subject" value="New message from portfolio" />
+              <input type="hidden" name="from_name" value="Samriddha Maraseni Portfolio" />
               <div class="form-row">
                 <div>
                   <label for="name">Name</label>
@@ -585,11 +588,7 @@ operations in a professional environment.
                 <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send Message</button>
-
-              <p class="form-note" id="form-note" role="status" hidden>
-                Message ready to send. This form is not connected to a backend yet — wire it to an email service or API
-                in script.js to deliver messages.
-              </p>
+              <p class="form-note" id="form-note" role="status" hidden></p>
             </form>
           </div>
         </div>

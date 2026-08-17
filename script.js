@@ -99,23 +99,33 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 
 /* ----------------------------------------------------------------------------
-   6. CONTACT FORM
-   Front-end only. To actually receive messages, replace the block below with
-   a real call to an email service or backend API, e.g.:
-
-     const response = await fetch('https://your-api.example.com/messages', {
-       method: 'POST',
-       headers: { 'Content-Type': 'application/json' },
-       body: JSON.stringify(Object.fromEntries(new FormData(form))),
-     })
-
-   Then delete the #form-note element in index.html.
+   6. CONTACT FORM — Web3Forms
    ---------------------------------------------------------------------------- */
 const form = document.getElementById('contact-form')
 const formNote = document.getElementById('form-note')
+const submitBtn = form.querySelector('button[type="submit"]')
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault() // stop the browser from reloading the page
-  form.reset()
-  formNote.hidden = false
+form.addEventListener('submit', async (event) => {
+  event.preventDefault()
+  submitBtn.disabled = true
+  submitBtn.textContent = 'Sending…'
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form),
+    })
+    const data = await res.json()
+    formNote.hidden = false
+    formNote.textContent = data.success
+      ? '✓ Message sent! I\'ll get back to you soon.'
+      : 'Something went wrong — try emailing me directly.'
+    if (data.success) form.reset()
+  } catch {
+    formNote.hidden = false
+    formNote.textContent = 'Network error — try emailing me directly.'
+  } finally {
+    submitBtn.disabled = false
+    submitBtn.textContent = 'Send Message'
+  }
 })
